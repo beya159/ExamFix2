@@ -14,7 +14,7 @@ public class TemperatureChecker26
     public static double
     getMaxTemperatures (ArrayList<Double>temperatures){
         return
-        Collection.max(temperatures);
+        Collections.max(temperatures);
     }
 }
 

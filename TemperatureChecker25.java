@@ -21,28 +21,21 @@ public class TemperatureChecker25
 
     public static void
     checkTemperatures (ArrayList<Double>temperatures){
-    int feverCount = 0;
-    double maxTemp = temperatures.get(0);
-    for (double temp : temperatures){
-        if (temp>37.5){
+        int feverCount = 0;
+        double maxTemp = temperatures.get(0);
+        for (double temp : temperatures){
+            if (temp>37.5){
             feverCount++;
         }
-        if (temp>maxTemp){
+            if (temp>maxTemp){
             maxTemp=temp;
         }
-        System.out.println("Number of fever temperatures:" + feverCount);
-        System.out.println("Maximum temperature recorded:" + maxTemp);
+            System.out.println("Number of fever temperatures:" + feverCount);
+            System.out.println("Maximum temperature recorded:" + maxTemp);
     }
-    }
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    temperatures.add(37.2);
+    temperatures.add(32.5);
+    temperatures.add(37.0);
+    temperatures.add(35.0);
     }
 }
